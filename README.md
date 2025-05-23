@@ -28,3 +28,13 @@ It is designed to showcase file reading and writing using system calls, along wi
 - Usage: ./file_copier_with_offset <source file> <dest file> <offset>
 
 ---
+
+## 3. DUP-based I/O Echo (Without printf / scanf)
+This program demonstrates how to perform standard input and output operations without using printf and scanf, instead using low-level system calls and file descriptor duplication via dup().
+
+### 🛠️ Concepts Covered
+- System-level input/output with read() and write()
+- File descriptor duplication with dup()
+- Clean, low-level resource handling using close()
+
+---
