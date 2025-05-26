@@ -48,3 +48,11 @@ This project uses the fork() system call to create a simple process tree with a 
 - `getpid()` : Returns the current process ID.
 - `getppid()` : Returns the parent process ID.
 - Process hierarchy and how child/parent relationships are maintained.
+
+### 3. Zombie Process Demonstration
+This project shows how a zombie process occurs when a child exits before the parent calls wait(). The parent’s delayed wait() causes the child to remain temporarily as a zombie.
+#### 🛠️ Concepts Covered
+- `fork()` : Creates a new child process.
+- `wait()` : Parent waits for child process termination and collects its exit status.
+- Zombie process behavior: how a terminated child remains until parent calls wait().
+- Note : Run the program and use `ps aux | grep Z` during the parent’s sleep to observe the zombie process.
