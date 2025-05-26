@@ -37,6 +37,14 @@ This program demonstrates how to perform standard input and output operations wi
 ### 1. Simple Process Info Viewer
 A basic C program that demonstrates retrieving the current process ID (PID), parent process ID (PPID), and displaying running processes using system("ps").
 #### 🛠️ Concepts Covered
-- getpid(): Get the process ID of the current process
-- getppid(): Get the process ID of the parent process
-- system(): Run shell commands from within a C program
+- `getpid()`: Get the process ID of the current process
+- `getppid()`: Get the process ID of the parent process
+- `system()`: Run shell commands from within a C program
+
+### 2. Process Tree Simulator
+This project uses the fork() system call to create a simple process tree with a main process, two child processes, and each child spawning a grandchild. Each process prints its PID, PPID, and role in the hierarchy.
+#### 🛠️ Concepts Covered
+- `fork()` : Creates a new process by duplicating the calling process.
+- `getpid()` : Returns the current process ID.
+- `getppid()` : Returns the parent process ID.
+- Process hierarchy and how child/parent relationships are maintained.
