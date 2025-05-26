@@ -37,6 +37,6 @@ This program demonstrates how to perform standard input and output operations wi
 ### 1. Simple Process Info Viewer
 A basic C program that demonstrates retrieving the current process ID (PID), parent process ID (PPID), and displaying running processes using system("ps").
 #### 🛠️ Concepts Covered
-getpid(): Get the process ID of the current process
-getppid(): Get the process ID of the parent process
-system(): Run shell commands from within a C program
+- getpid(): Get the process ID of the current process
+- getppid(): Get the process ID of the parent process
+- system(): Run shell commands from within a C program
