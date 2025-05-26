@@ -56,3 +56,10 @@ This project shows how a zombie process occurs when a child exits before the par
 - `wait()` : Parent waits for child process termination and collects its exit status.
 - Zombie process behavior: how a terminated child remains until parent calls wait().
 - Note : Run the program and use `ps aux | grep Z` during the parent’s sleep to observe the zombie process.
+
+### 4. Fork and Execute
+This project demonstrates process creation using fork() and executing a new program in the child process with execlp(). The parent process waits for the child to finish and reports its exit status.
+#### 🛠️ Concepts Covered
+- `fork()` : Creates a new child process.
+- `execlp()` : Replaces the child process image with a new program (ls -l).
+- `wait()` : Parent waits for the child process to terminate and retrieves its exit status.
