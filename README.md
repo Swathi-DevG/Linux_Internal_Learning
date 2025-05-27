@@ -63,3 +63,15 @@ This project demonstrates process creation using fork() and executing a new prog
 - `fork()` : Creates a new child process.
 - `execlp()` : Replaces the child process image with a new program (ls -l).
 - `wait()` : Parent waits for the child process to terminate and retrieves its exit status.
+
+---
+## Inter Process Communication
+
+### 1. File Content Transfer Using Named Pipe (FIFO)
+This project demonstrates **inter-process communication (IPC)** using **named pipes** (FIFOs) in C. It involves two processes — one that writes data to a FIFO and another that reads from it.
+#### 🛠️ Concepts Covered
+- `mkfifo()`: To create a named pipe (FIFO).
+- `fork()`: To create a child process.
+- `open()` / `read()` / `write()`: For low-level file and pipe I/O.
+- `wait()` : To synchronize the parent and child processes.
+- `unlink()`: To clean up the FIFO after usage.
